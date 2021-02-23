@@ -1,2 +1,7 @@
 model/*
 !.gitkeep
+
+data/*
+!.gitkeep
+
+.ipynb_checkpoints

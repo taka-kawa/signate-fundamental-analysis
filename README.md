@@ -3,11 +3,14 @@
 ## Environment Setup
 
 ```
-$ pyenv install anaconda3-2019.03
-$ pyenv local anaconda3-2019.03
+$ docker pull continuumio/anaconda3:2019.03
+$ docker run --name signate-fundamental-analysis -d -it continuumio/anaconda3:2019.03
 ```
 
 ```
-$ pip install poetry
-$ poetry install
+$ docker exec -it signate-fundamental-analysis /bin/bash
+// login
+$ mkdir /root/user | cd /root/user
+$ git clone https://github.com/taka-kawa/signate-fundamental-analysis.git
+$ pip install requirements.txt
 ```
